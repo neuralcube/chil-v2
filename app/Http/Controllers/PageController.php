@@ -8,22 +8,17 @@ class PageController extends Controller
 {
     //
     public function index(): View
-        {
+    {
         return view('pages.index');
     }
-
 
     public function about(): View
     {
         return view('pages.about');
     }
 
-
-
-
-
     public function contact(): View
-    {
+    { 
         return view('pages.contact');
     }
 
@@ -34,8 +29,6 @@ class PageController extends Controller
 
     public function complexCare(): View
     {
-
-
         return view('pages.complex-care');
     }
 
@@ -46,9 +39,7 @@ class PageController extends Controller
 
     public function homeCare(): View
     {
-            return view('pages.home-care');
-
-
+        return view('pages.home-care');
     }
 
     public function privateCare(): View
@@ -66,9 +57,8 @@ class PageController extends Controller
         return view('pages.supported-living-service');
     }
 
-    public function privacyPolicy (): View {
+    public function privacyPolicy(): View
+    {
         return view('pages.policies.privacy-policy');
     }
-
 }
-
