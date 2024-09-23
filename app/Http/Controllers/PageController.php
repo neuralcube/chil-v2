@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormMail;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Request;
 use Illuminate\View\View;
 
 class PageController extends Controller
@@ -18,7 +21,7 @@ class PageController extends Controller
     }
 
     public function contact(): View
-    { 
+    {
         return view('pages.contact');
     }
 
@@ -60,5 +63,37 @@ class PageController extends Controller
     public function privacyPolicy(): View
     {
         return view('pages.policies.privacy-policy');
+    }
+
+    public function contactStore()
+    {
+        // Validate the form data
+        $validatedData = request()->validate([
+            'firstname' => 'required|string|max:255',
+            'surname' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'telephone' => 'required|string|max:20',
+            'message' => 'required|string|max:5000',
+        ]);
+
+        // Prepare the details for the email
+        $details = [
+            'firstname' => $validatedData['firstname'],
+            'surname' => $validatedData['surname'],
+            'email' => $validatedData['email'],
+            'telephone' => $validatedData['telephone'],
+            'message' => $validatedData['message'],
+        ];
+
+        try {
+            // Attempt to send the email
+            Mail::to('hr@chil.care')->send(new ContactFormMail($details));
+
+            // If successful, redirect with a success message
+            return redirect('/')->with('status', 'Your message has been sent successfully!');
+        } catch (\Exception $e) {
+            // If there is an error, redirect with an error message
+            return redirect('/contact')->with('status', 'Sorry, there was an error sending your message. Please try again later.');
+        }
     }
 }

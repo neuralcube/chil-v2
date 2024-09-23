@@ -2,7 +2,7 @@
     <x-slot:banner>
         <section
         style="
-          background-image: url('{{asset('img/about.jpg')}}');
+          background-image: url('{{asset('storage/img/about.jpg')}}');
           background-size: cover;
           background-attachment: fixed;
           background-position: center;

@@ -4,7 +4,7 @@
 >
     <div class="relative flex justify-center items-center">
         <img
-            src="{{asset('img/chil_logo.svg')}}"
+            src="{{asset('storage/img/chil_logo.svg')}}"
             class="motion-safe:animate-bounce ease-in rounded-full h-28 w-28"
         />
     </div>

@@ -808,7 +808,7 @@ li {
                                                                                             <a href="https://chil.care"
                                                                                                 target="_blank">
                                                                                                 <img class="img-2009"
-                                                                                                    src="{{ $message->embed(public_path('img/logo.png')) }}"
+                                                                                                    src="{{ $message->embed(public_path('storage/img/logo.png')) }}"
                                                                                                     title="C.H.I.L-Caring Hands Int. Ltd"
                                                                                                     alt="C.H.I.L-Caring Hands Int. Ltd"
                                                                                                     width="145">
@@ -895,8 +895,8 @@ li {
                                                                                             align="left">
                                                                                             <p class="es-m-txt-l es-override-size es-text-mobile-size-16"
                                                                                                 style="color:#1F3A93;font-size:18px;line-height:150%;font-family:verdana,geneva,sans-serif">
-                                                                                                {{ $details['firstName'] }}
-                                                                                                {{ $details['lastName'] }}
+                                                                                                {{ $details['firstname'] }}
+                                                                                                {{ $details['surname'] }}
                                                                                                 has submitted
                                                                                                 the contact form on
                                                                                                 chil.care
@@ -998,7 +998,7 @@ li {
                                                                                             align="left">
                                                                                             <h2 class="es-text-mobile-size-18"
                                                                                                 style="color:#800;font-size:18px">
-                                                                                                <strong>Subject:</strong>
+                                                                                                <strong>Telephone:</strong>
                                                                                             </h2>
                                                                                         </td>
                                                                                     </tr>
@@ -1025,7 +1025,7 @@ li {
                                                                                             align="left">
                                                                                             <h2 class="es-text-mobile-size-20"
                                                                                                 style="font-size:20px;line-height:120% !important;font-family:verdana,geneva,sans-serif">
-                                                                                                <strong>{{ $details['subject'] }}</strong>
+                                                                                                <strong>{{ $details['telephone'] }}</strong>
                                                                                             </h2>
                                                                                         </td>
                                                                                     </tr>

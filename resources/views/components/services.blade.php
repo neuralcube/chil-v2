@@ -53,7 +53,7 @@
         >
           <img
             class="w-full h-full object-cover"
-            src="{{asset('img/comlex_care.jpg')}}"
+            src="{{asset('storage/img/comlex_care.jpg')}}"
             alt="Personalized Care Services"
           />
           <div
@@ -94,7 +94,7 @@
         >
           <img
             class="w-full h-full object-cover"
-            src="{{asset('img/Doctor taking care of senior woman at home.jpg')}}"
+            src="{{asset('storage/img/Doctor taking care of senior woman at home.jpg')}}"
             alt="Doctor taking care of senior woman at home"
           />
           <div
@@ -135,7 +135,7 @@
         >
           <img
             class="w-full h-64 object-cover"
-            src="{{asset('img/home_care.jpg')}}"
+            src="{{asset('storage/img/home_care.jpg')}}"
             alt="Care Giver assisting elderly in the home"
           />
           <div
@@ -176,7 +176,7 @@
         >
           <img
             class="w-full h-64 object-cover"
-            src="{{asset('img/private.jpg')}}"
+            src="{{asset('storage/img/private.jpg')}}"
             alt="privateCare assistane shopping and smiling with client"
           />
           <div
@@ -217,7 +217,7 @@
         >
           <img
             class="w-full h-64 object-cover"
-            src="{{asset('img/suport.jpg')}}"
+            src="{{asset('storage/img/suport.jpg')}}"
             alt="Image of well-being assistant and Lady smiling"
           />
           <div

@@ -3,7 +3,7 @@
         <!-- Banner -->
         <section
             style="
-        background-image: url('{{asset('img/about.jpg')}}');
+        background-image: url('{{asset('storage/img/about.jpg')}}');
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -77,7 +77,7 @@
                                 data-aos-duration="1000"
                                 data-aos-delay="100"
                                 class="object-cover"
-                                src="{{asset('img/caregiver_nurses.jpg')}}"
+                                src="{{asset('storage/img/caregiver_nurses.jpg')}}"
                                 alt="Picture of well-being assistant assisting an Elderly Lady"
                             />
                         </div>
@@ -91,7 +91,7 @@
                                     data-aos-duration="1000"
                                     data-aos-delay="100"
                                     class="h-full object-cover"
-                                    src="{{asset('img/story.jpg')}}"
+                                    src="{{asset('storage/img/story.jpg')}}"
                                     alt="Carerer eith a girl and her grandmother"
                                 />
                             </div>
@@ -196,7 +196,7 @@
                         data-aos-duration="1000"
                         data-aos-delay="100"
                         class="object-cover"
-                        src="{{asset('img/caregiver_tight_hug_elderly.jpg')}}"
+                        src="{{asset('storage/img/caregiver_tight_hug_elderly.jpg')}}"
                         alt="Picture of well-being assistant giving tight hug to an Elderly Lady"
                     />
                 </div>
@@ -210,7 +210,7 @@
                             data-aos-duration="1000"
                             data-aos-delay="100"
                             class="h-full object-cover"
-                            src="{{asset('img/caregiver holding girl in wheel chair.jpg')}}"
+                            src="{{asset('storage/img/caregiver holding girl in wheel chair.jpg')}}"
                             alt="HAppy well-being assistant holding girl in wheel chairPicture of well-being assistant hugging"
                         />
                     </div>
@@ -516,7 +516,7 @@
                             </ul>
                             <div data-aos="zoom-in" data-aos-duration="500">
                                 <img
-                                    src="{{asset('img/care_workers_smiling.jpg')}}"
+                                    src="{{asset('storage/img/care_workers_smiling.jpg')}}"
                                     alt="care_workers_smiling"
                                     class="h-40 w-full object-cover"
                                 />
@@ -544,7 +544,7 @@
                         data-aos-duration="1000"
                     >
                         <img
-                            src="{{asset('img/mission.jpg')}}"
+                            src="{{asset('storage/img/mission.jpg')}}"
                             alt="Team of volunteers stacking hands"
                             class="rounded-lg shadow-md"
                         />

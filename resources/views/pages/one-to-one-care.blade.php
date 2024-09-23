@@ -2,7 +2,7 @@
     <x-slot:banner>
         <section
         style="
-          background-image: url('{{asset('img/services.jpg')}}');
+          background-image: url('{{asset('storage/img/services.jpg')}}');
           background-size: cover;
           background-attachment: fixed;
           background-position: center;
@@ -78,7 +78,7 @@
               >
                 <img
                   class="rounded-lg shadow-lg"
-                  src="{{asset('img/care.jpg')}}"
+                  src="{{asset('storage/img/care.jpg')}}"
                   alt="One-to-One Care Services"
                 />
                 <figcaption class="sr-only">One-to-One Care Service</figcaption>

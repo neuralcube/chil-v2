@@ -2,7 +2,7 @@
     <x-slot:banner>
         <section
         style="
-          background-image: url('{{asset('img/services.jpg')}}');
+          background-image: url('{{asset('storage/img/services.jpg')}}');
           background-size: cover;
           background-attachment: fixed;
           background-position: center;
@@ -78,7 +78,7 @@
               >
                 <img
                   class="rounded-lg shadow-lg"
-                  src="{{asset('img/Doctor taking care of senior woman at home.jpg') }}"
+                  src="{{asset('storage/img/Doctor taking care of senior woman at home.jpg') }}"
                   alt="Doctor taking care of senior woman at home"
                 />
                 <figcaption class="sr-only">Live-In Care Service</figcaption>

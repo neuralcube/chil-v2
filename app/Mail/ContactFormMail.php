@@ -25,12 +25,9 @@ class ContactFormMail extends Mailable
         $this->details = $details;
     }
 
-    /**
-     * Get the message envelope.
-     */
     public function envelope(): Envelope
     {
-        return new Envelope(from: new Address($this->details['email'], $this->details['firstName'] . ' ' . $this->details['lastName']), subject: 'Contact Form Submission');
+        return new Envelope(from: new Address('iyke@chil.care', 'CHIL Contact Form'), replyTo: [new Address($this->details['email'], $this->details['firstname'] . ' ' . $this->details['surname'])], subject: 'Contact Form Submission');
     }
 
     /**
@@ -38,6 +35,7 @@ class ContactFormMail extends Mailable
      */
     public function content(): Content
     {
+        // dd($this->details);
         return new Content(view: 'emails.contact');
     }
 

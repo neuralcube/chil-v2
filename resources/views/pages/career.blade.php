@@ -2,7 +2,7 @@
     <x-slot:banner>
         <section
             style="
-          background-image: url('{{asset('img/team\ of\ care\ givers.jpg')}}');
+          background-image: url('{{asset('storage/img/team\ of\ care\ givers.jpg')}}');
           background-size: cover;
           background-attachment: fixed;
           background-position: center;
@@ -131,7 +131,7 @@
         <!-- Contact -->
         <section
             style="
-            background-image: url('{{asset('img/team of care givers.jpg')}}');
+            background-image: url('{{asset('storage/img/team of care givers.jpg')}}');
             background-attachment: fixed;
           "
             class="mt-16 bg-cover bg-center"

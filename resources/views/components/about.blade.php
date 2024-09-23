@@ -11,7 +11,7 @@
                   data-aos-duration="800"
                   data-aos-delay="200"
                   class="object-cover"
-                  src="{{asset('img/caregiver_and_elderly.jpg')}}"
+                  src="{{asset('storage/img/caregiver_and_elderly.jpg')}}"
                   alt="Picture of well-being assistant assisting an Elderly Lady"
               />
           </div>
@@ -25,7 +25,7 @@
                       data-aos-duration="800"
                       data-aos-delay="300"
                       class="h-full object-cover"
-                      src="{{asset('img/young-orthodontist.jpg')}}"
+                      src="{{asset('storage/img/young-orthodontist.jpg')}}"
                       alt="Picture of young orthodontist"
                   />
               </div>
