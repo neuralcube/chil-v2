@@ -19,3 +19,4 @@ Route::get('/services/supported-living-service', [PageController::class, 'suppor
 Route::get('/policies/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');
 
 Route::post('/contact', [PageController::class, 'contactStore']);
+Route::post('/career', [PageController::class, 'careerStore']);
